@@ -7,6 +7,153 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <style>
+      /* Global Styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      /* Header */
+      header {
+        background-color: #78B3CE;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+
+      /* Profile Section */
+      .profile {
+        text-align: center;
+        background-color: #5f625d;
+        color: white;
+        padding: 2rem 0;
+      }
+
+      .profile img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      .profile h2 {
+        font-size: 1.8rem;
+      }
+
+      .profile p {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+      }
+
+      /* Content Section */
+      .content {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+        background-color: white;
+      }
+
+      .story,
+      .info {
+        width: 45%;
+      }
+
+      .story h3,
+      .info h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .story p {
+        margin-bottom: 1rem;
+      }
+
+      .info ul {
+        list-style: none;
+      }
+
+      .info li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Social Section */
+      .social {
+        text-align: center;
+        padding: 2rem;
+        background-color: #f4f4f4;
+      }
+
+      .social h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .social .icons a {
+        margin: 0 0.5rem;
+      }
+
+      .social .icons img {
+        width: 32px;
+        height: 32px;
+      }
+
+      .social .icons a {
+        margin: 0 0.5rem;
+        font-size: 2rem;
+        color: #333;
+        text-decoration: none;
+      }
+
+      .social .icons a:hover {
+        color: #3b5998; /* Warna hover, bisa disesuaikan */
+      }
+
+      /* Gallery Section */
+      .gallery {
+        text-align: center;
+        padding: 2rem;
+        background-color: white;
+      }
+
+      .gallery h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .gallery .photos img {
+        width: 150px;
+        height: 100px;
+        margin: 0.5rem;
+        border-radius: 5px;
+      }
+
+      /* Footer Section */
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
+
+      footer p {
+        font-size: 1rem;
+      }
+    </style>
+
   </head>
   <body>
     <header>
@@ -15,10 +162,10 @@
     <main>
       <section class="profile">
         <img
-          src="https://storage.googleapis.com/my_profile123/profile.jpg"
-          alt="Rafli"
+          src="https://storage.googleapis.com/storage-munarah/profile.jpg"
+          alt="Munasrah"
         />
-        <h2>Rafli Diga</h2>
+        <h2>Munasrah</h2>
         <p>Junior Web Developer</p>
       </section>
       <section class="content">
@@ -37,21 +184,32 @@
         <div class="info">
           <h3>Personal Information</h3>
           <ul>
-            <li><strong>Age:</strong> 21 years old</li>
+            <li><strong>Age:</strong> 20 years old</li>
             <li><strong>Phone:</strong> +62-8131-1351-XXX</li>
-            <li><strong>Email:</strong> rafli@gmail.com</li>
+            <li><strong>Email:</strong> Munasrah@gmail.com</li>
           </ul>
         </div>
       </section>
       <section class="social">
-  <h3>Find me in!</h3>
-  <div class="icons">
-    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-  </div>
-</section>
-
+        <h3>Find me in!</h3>
+        <div class="icons">
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+      </section>
+      <section class="gallery">
+        <h3>Travel Photos</h3>
+        <div class="photos">
+          <img src="https://storage.googleapis.com/storage-munarah/kayangan-island.jpg" alt="Photo 1">
+          <img src="https://storage.googleapis.com/storage-munarah/pantai-appalarang.jpg" alt="Photo 2">
+          <img src="https://storage.googleapis.com/storage-munarah/pulau-lanjukang.jpg" alt="Photo 3">
+          <img src="https://storage.googleapis.com/storage-munarah/pulau-samalona.jpg" alt="Photo 4">
+        </div>
+      </section>
     </main>
+    <footer>
+      <p>&copy; 2024 Munasrah. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
